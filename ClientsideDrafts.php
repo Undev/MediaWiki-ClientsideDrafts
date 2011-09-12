@@ -20,17 +20,28 @@ $wgExtensionCredits['other'][] = array(
   'author' => 'Akzhan Abdulin',
   'url' => 'http://www.mediawiki.org/wiki/User:Akzhan',
   'version' => '0.1',
-  'description' => 'This extenstion allows to save/restore article drafts in local computer using HTML5 localStorage',
-  'descriptionmsg' => 'clientsidedrafts:description'
+  'description' => 'This extension allows to save/restore article drafts in local computer using HTML5 localStorage',
+  'descriptionmsg' => 'clientsidedrafts-description'
 );
 
 // Register load hook
 $wgHooks['EditPage::showEditForm:initial'][] = 'ClientsideDrafts::loadForm';
 
 // Register ajax add script hook
-$wgHooks['AjaxAddScript'][] = 'ClientsideDrafts::addJS';
+# $wgHooks['AjaxAddScript'][] = 'ClientsideDrafts::addJS';
 
 // Register css add script hook
-$wgHooks['BeforePageDisplay'][] = 'ClientsideDrafts::addCSS';
+# $wgHooks['BeforePageDisplay'][] = 'ClientsideDrafts::addCSS';
 
+$wgResourceModules['ext.ClientsideDrafts'] = array(
+  'localBasePath' => dirname(__FILE__),
+  'remoteExtPath' => 'ClientsideDrafts',
+  'scripts' => 'ClientsideDrafts.js',
+  'dependencies' => 'mediawiki.legacy.wikibits',
+  'messages' => array(
+    'clientsidedrafts-autosaved',
+    'clientsidedrafts-trouble',
+    'clientsidedrafts-required'
+  )
+);
 
