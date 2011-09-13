@@ -18,9 +18,8 @@ $wgExtensionCredits['other'][] = array(
   'path' => __FILE__,
   'name' => 'Clientside drafts',
   'author' => 'Akzhan Abdulin',
-  'url' => 'https://github.com/Undev/MediaWiki-ClientsideDrafts',
+  'url' => 'http://www.mediawiki.org/wiki/Extension:ClientsideDrafts',
   'version' => '0.1',
-  'description' => 'This extension allows to save/restore article drafts in local computer using HTML5 localStorage',
   'descriptionmsg' => 'clientsidedrafts-description'
 );
 
