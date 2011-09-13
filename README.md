@@ -29,3 +29,12 @@ require_once( "$IP/extensions/ClientsideDrafts/ClientsideDrafts.php" );
 
 That's all.
 
+## License
+
+Licensed under MIT License.
+
+## Links
+
+* [Home page](http://www.mediawiki.org/wiki/Extension:ClientsideDrafts)
+* [GitHub Repository](https://github.com/Undev/MediaWiki-ClientsideDrafts)
+
