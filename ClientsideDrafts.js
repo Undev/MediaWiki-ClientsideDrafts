@@ -27,15 +27,15 @@
     var msg = mediaWiki.message.apply(mediaWiki, arguments);
     return msg.toString();
   };
-  if ($ === undef || storage === undef || JSON === undef) {
+  if (storage === undef || JSON === undef) {
     showMessage(t('clientsidedrafts-required'));
-    return; // No jQuery, HTML5 storage or JSON support, exiting.
+    return; // No HTML5 storage or JSON support, exiting.
   }
 
   // State saved as pair { original, draft }
 
   (function(title, userName) {
-    var key = [keyPrefix, userName, title].join('-'), loadKey = function(key) {
+    var key = [keyPrefix, userName || '', title].join('-'), loadKey = function(key) {
       var s = storage.getItem(key);
       if (s !== null) {
         s = JSON.parse(s);
