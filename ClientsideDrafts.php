@@ -26,12 +26,6 @@ $wgExtensionCredits['other'][] = array(
 // Register load hook
 $wgHooks['EditPage::showEditForm:initial'][] = 'ClientsideDrafts::loadForm';
 
-// Register ajax add script hook
-# $wgHooks['AjaxAddScript'][] = 'ClientsideDrafts::addJS';
-
-// Register css add script hook
-# $wgHooks['BeforePageDisplay'][] = 'ClientsideDrafts::addCSS';
-
 $wgResourceModules['ext.ClientsideDrafts'] = array(
   'localBasePath' => dirname(__FILE__),
   'remoteExtPath' => 'ClientsideDrafts',
