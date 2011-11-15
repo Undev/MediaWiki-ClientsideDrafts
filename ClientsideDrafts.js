@@ -7,7 +7,7 @@
     troubleLoad = '<a href="javascript:;" class="clientsidedrafts_loaddraft">',
     troubleEnd = '</a>',
     troubleSkip = '<a href="javascript:;" class="clientsidedrafts_skipdraft">',
-    AUTOSAVE_INTERVAL = 2 * 60 * 1000; // once per 2 minutes
+    AUTOSAVE_INTERVAL = 30 * 1000; // once per 30 seconds
 
   log = mediaWiki.log || (window.console ? window.console.log : $.noop);
   showMessage = function(msg) {
