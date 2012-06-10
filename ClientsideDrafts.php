@@ -10,7 +10,7 @@ EOT;
 
 $dir = dirname( __FILE__ ) . '/';
 
-$wgClientsideDraftsVersion = '0.1';
+$wgClientsideDraftsVersion = '0.2';
 $wgAutoloadClasses['ClientsideDrafts'] = $dir. 'ClientsideDrafts.body.php';
 $wgExtensionMessagesFiles['ClientsideDrafts'] = $dir. 'ClientsideDrafts.i18n.php';
 
@@ -19,7 +19,7 @@ $wgExtensionCredits['other'][] = array(
   'name' => 'Clientside drafts',
   'author' => 'Akzhan Abdulin',
   'url' => 'http://www.mediawiki.org/wiki/Extension:ClientsideDrafts',
-  'version' => '0.1',
+  'version' => '0.2',
   'descriptionmsg' => 'clientsidedrafts-description'
 );
 
