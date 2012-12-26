@@ -1,6 +1,13 @@
 <?php
 
 $messages = array();
+/* German translation by mario.siegmann@googlemail.com */
+$messages['de'] = array(
+  'clientsidedrafts-description' => 'Diese Erweiterung ermöglicht das Speichern und Wiederherstellen von Artikel-Entwürfen mittels lokalen HTML5-Speicherungen auf Ihrem Computer.',
+  'clientsidedrafts-required'    => 'HTML5-Speicherung und JSON Browser-Unterstützung wird für die Clientside Drafts - Erweiterung benötigt. Bitte aktualisieren Sie Ihren Browser.',
+  'clientsidedrafts-autosaved'   => 'Entwurf unter $1 automatisch gespeichert.',
+  'clientsidedrafts-trouble'     => 'Original wurde geändert. $1 übernimmt den Entwurf $2 oder $3 verwirft $4? Automatisches Speichern wurde, bis Sie eine Option gewählt haben, deaktiviert.'
+);
 $messages['en'] = array(
   'clientsidedrafts-description' => 'This extension allows to save/restore article drafts in local computer using HTML5 localStorage.',
   'clientsidedrafts-required'    => 'HTML5 storage and JSON browser support required for Clientside Drafts extension. Please upgrade the browser.',
@@ -13,7 +20,6 @@ $messages['ru'] = array(
   'clientsidedrafts-autosaved'   => 'Черновик автоматически сохранен в $1',
   'clientsidedrafts-trouble'     => 'Оригинал статьи изменился, $1 загрузить черновик $2 или $3 пропустить его загрузку $4? Автосохранение отключено, пока вы не выберете одну из опций.'
 );
-
 /* Chinese translation by zoglun@gmail.com */
 $messages['zh'] = array(
   'clientsidedrafts-description' => '这个插件可以通过HTM5的本地储存功能实现本机保存草稿',
