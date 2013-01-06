@@ -99,7 +99,7 @@
       saveDraft();
     });
 
-  })(mediaWiki.config.values.wgTitle, mediaWiki.config.values.wgUserName);
+  })(mediaWiki.config.values.wgPageName, mediaWiki.config.values.wgUserName);
 
 })(window, jQuery);
 
