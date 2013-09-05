@@ -80,9 +80,10 @@
       }
       state = { original: original, draft: draft };
       saveKey(key, state);
-      showMessage(t('clientsidedrafts-autosaved', (new Date()).toString()));
+//      showMessage(t('clientsidedrafts-autosaved', (new Date()).toString()));
     };
 
+    $('<p style="margin: 10px auto">Черновик сохраняется каждые ' + AUTOSAVE_INTERVAL/1000 + ' секунд.</p>').insertBefore('#editpage-copywarn p');
     setInterval(saveDraft, AUTOSAVE_INTERVAL);
     loadDraft();
 
